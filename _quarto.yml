@@ -1,5 +1,6 @@
 project:
   type: website
+  resources: ["LMU_Project.ipynb"]
 
 website:
   title: "My Portfolio"
@@ -14,3 +15,4 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    keep-ipynb: true
