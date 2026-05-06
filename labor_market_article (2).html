@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.37">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <title>LMU Labor Market Analysis – My Portfolio</title>
+  <style>
+    /* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+    code {
+      white-space: pre-wrap;
+    }
+
+    span.smallcaps {
+      font-variant: small-caps;
+    }
+
+    div.columns {
+      display: flex;
+      gap: min(4vw, 1.5em);
+    }
+
+    div.column {
+      flex: auto;
+      overflow-x: auto;
+    }
+
+    div.hanging-indent {
+      margin-left: 1.5em;
+      text-indent: -1.5em;
+    }
+
+    ul.task-list {
+      list-style: none;
+    }
+
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em;
+      /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
+      vertical-align: middle;
+    }
+  </style>
+
+  <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+  <script src="site_libs/quarto-nav/headroom.min.js"></script>
+  <script src="site_libs/clipboard/clipboard.min.js"></script>
+  <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+  <script src="site_libs/quarto-search/fuse.min.js"></script>
+  <script src="site_libs/quarto-search/quarto-search.js"></script>
+  <meta name="quarto:offset" content="./">
+  <script src="site_libs/quarto-html/quarto.js" type="module"></script>
+  <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+  <script src="site_libs/quarto-html/popper.min.js"></script>
+  <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+  <script src="site_libs/quarto-html/anchor.min.js"></script>
+  <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet"
+    id="quarto-text-highlighting-styles">
+  <script src="site_libs/bootstrap/bootstrap.min.js"></script>
+  <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <link href="site_libs/bootstrap/bootstrap-7ee132498c61da618cb63d6ce2648d66.min.css" rel="stylesheet"
+    append-hash="true" id="quarto-bootstrap" data-mode="light">
+  <script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=DM+Sans:wght@400;500;600&display=swap');
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --red: #C0392B;
+      --red-light: #FAE9E7;
+      --red-mid: #E8604A;
+      --ink: #1A1A1A;
+      --ink-mid: #3D3D3D;
+      --ink-light: #6B6B6B;
+      --rule: #D8D2C8;
+      --paper: #FAFAF8;
+      --paper-warm: #F5F2ED;
+      --serif: 'Source Serif 4', Georgia, serif;
+      --display: 'Playfair Display', 'Times New Roman', serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+    }
+
+    html {
+      background: var(--paper);
+    }
+
+    body {
+      font-family: var(--serif);
+      color: var(--ink);
+      background: var(--paper);
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    /* ── TOP RULE ── */
+    .top-bar {
+      background: var(--red);
+      height: 4px;
+      width: 100%;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      border-bottom: 0.5px solid var(--rule);
+      padding: 14px 0;
+      text-align: center;
+    }
+
+    .masthead-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .masthead-tag {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--red);
+    }
+
+    .masthead-title {
+      font-family: var(--display);
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+
+    .masthead-date {
+      font-family: var(--sans);
+      font-size: 11px;
+      color: var(--ink-light);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      max-width: 760px;
+      margin: 60px auto 0;
+      padding: 0 24px;
+      text-align: center;
+    }
+
+    .kicker {
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .kicker::before,
+    .kicker::after {
+      content: '';
+      display: inline-block;
+      width: 32px;
+      height: 1px;
+      background: var(--red);
+    }
+
+    h1.headline {
+      font-family: var(--display);
+      font-size: clamp(36px, 6vw, 58px);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .deck {
+      font-family: var(--serif);
+      font-size: 19px;
+      line-height: 1.6;
+      color: var(--ink-mid);
+      max-width: 620px;
+      margin: 0 auto 28px;
+      font-style: italic;
+    }
+
+    .byline-row {
+      font-family: var(--sans);
+      font-size: 12px;
+      color: var(--ink-light);
+      letter-spacing: 0.04em;
+    }
+
+    .byline-row strong {
+      color: var(--ink-mid);
+      font-weight: 600;
+    }
+
+    /* ── HERO DIVIDER ── */
+    .hero-rule {
+      max-width: 760px;
+      margin: 36px auto 0;
+      padding: 0 24px;
+    }
+
+    .hero-rule hr {
+      border: none;
+      border-top: 0.5px solid var(--rule);
+    }
+
+    /* ── STAT STRIP ── */
+    .stat-strip {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 24px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border-bottom: 0.5px solid var(--rule);
+    }
+
+    .stat-item {
+      padding: 0 24px;
+      text-align: center;
+      position: relative;
+    }
+
+    .stat-item+.stat-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10%;
+      height: 80%;
+      width: 0.5px;
+      background: var(--rule);
+    }
+
+    .stat-num {
+      font-family: var(--display);
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--red);
+      line-height: 1;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      font-family: var(--sans);
+      font-size: 12px;
+      color: var(--ink-light);
+      line-height: 1.4;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── BODY ── */
+    .article-body {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .article-body p {
+      margin-bottom: 1.4em;
+      color: var(--ink-mid);
+    }
+
+    .article-body p:first-child::first-letter {
+      font-family: var(--display);
+      font-size: 64px;
+      font-weight: 900;
+      float: left;
+      line-height: 0.8;
+      margin: 6px 8px -4px 0;
+      color: var(--red);
+    }
+
+    /* ── SECTION HEADERS ── */
+    .section-head {
+      margin: 52px 0 20px;
+      padding-top: 28px;
+      border-top: 2px solid var(--ink);
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .section-num {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--red);
+      flex-shrink: 0;
+    }
+
+    h2.section-title {
+      font-family: var(--display);
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+
+    /* ── PULL QUOTE ── */
+    .pull-quote {
+      margin: 40px -32px;
+      padding: 28px 32px;
+      border-top: 2px solid var(--red);
+      border-bottom: 0.5px solid var(--rule);
+    }
+
+    .pull-quote blockquote {
+      font-family: var(--display);
+      font-size: 26px;
+      font-style: italic;
+      line-height: 1.35;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+
+    .pull-quote cite {
+      display: block;
+      margin-top: 10px;
+      font-family: var(--sans);
+      font-size: 12px;
+      font-style: normal;
+      color: var(--ink-light);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    /* ── CHART BLOCK ── */
+    .chart-block {
+      margin: 36px 0;
+      background: var(--paper-warm);
+      border: 0.5px solid var(--rule);
+      border-radius: 4px;
+      padding: 28px 24px 20px;
+    }
+
+    .chart-caption {
+      font-family: var(--sans);
+      font-size: 11px;
+      color: var(--ink-light);
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 0.5px solid var(--rule);
+      line-height: 1.5;
+    }
+
+    .chart-title {
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 4px;
+      letter-spacing: 0.02em;
+    }
+
+    .chart-subtitle {
+      font-family: var(--sans);
+      font-size: 11px;
+      color: var(--ink-light);
+      margin-bottom: 18px;
+    }
+
+    /* ── FINDINGS BOX ── */
+    .findings-box {
+      margin: 40px 0;
+      padding: 28px 32px;
+      background: var(--red-light);
+      border-left: 3px solid var(--red);
+      border-radius: 0 4px 4px 0;
+    }
+
+    .findings-box h3 {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 14px;
+    }
+
+    .findings-box ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .findings-box ul li {
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--ink-mid);
+      padding: 6px 0;
+      padding-left: 18px;
+      position: relative;
+      border-bottom: 0.5px solid rgba(192, 57, 43, 0.15);
+      line-height: 1.5;
+    }
+
+    .findings-box ul li:last-child {
+      border-bottom: none;
+    }
+
+    .findings-box ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 8px;
+      height: 2px;
+      background: var(--red);
+    }
+
+    .findings-box ul li strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* ── LEGEND ── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 10px;
+      font-family: var(--sans);
+      font-size: 12px;
+      color: var(--ink-light);
+    }
+
+    .legend span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .legend-swatch {
+      width: 12px;
+      height: 12px;
+      border-radius: 2px;
+      display: inline-block;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink);
+      color: rgba(255, 255, 255, 0.5);
+      font-family: var(--sans);
+      font-size: 12px;
+      text-align: center;
+      padding: 24px;
+      letter-spacing: 0.04em;
+    }
+
+    footer strong {
+      color: rgba(255, 255, 255, 0.85);
+    }
+  </style>
+</head>
+
+<body class="nav-fixed quarto-light">
+
+  <div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+        <div class="navbar-brand-container mx-auto">
+          <a class="navbar-brand" href="./index.html">
+            <span class="navbar-title">My Portfolio</span>
+          </a>
+        </div>
+        <div id="quarto-search" class="" title="Search"></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation"
+          onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">
+                <span class="menu-text">Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">
+                <span class="menu-text">About Me</span></a>
+            </li>
+          </ul>
+        </div> <!-- /navcollapse -->
+        <div class="quarto-navbar-tools">
+        </div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  </header>
+  <!-- content -->
+  <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    <!-- sidebar -->
+    <!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+      <nav id="TOC" role="doc-toc" class="toc-active">
+        <h2 id="toc-title">On this page</h2>
+
+        <ul>
+          <li><a href="#introduction" id="toc-introduction" class="nav-link active"
+              data-scroll-target="#introduction">Introduction</a></li>
+          <li><a href="#data-overview" id="toc-data-overview" class="nav-link" data-scroll-target="#data-overview">Data
+              Overview</a></li>
+          <li><a href="#exploratory-data-analysis" id="toc-exploratory-data-analysis" class="nav-link"
+              data-scroll-target="#exploratory-data-analysis">Exploratory Data Analysis</a></li>
+          <li><a href="#modeling" id="toc-modeling" class="nav-link" data-scroll-target="#modeling">Modeling</a></li>
+          <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- main -->
+    <main class="content" id="quarto-document-content">
+
+      <div class="top-bar"></div>
+
+      <header class="masthead">
+        <div class="masthead-inner">
+          <span class="masthead-tag">LMU Datathon · Grad #12</span>
+          <span class="masthead-title">Labor Market Review</span>
+          <span class="masthead-date">2026 Research Report</span>
+        </div>
+      </header>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="kicker">Research Findings</div>
+        <h1 class="headline">The Hidden Cost<br><em>of Being Female</em></h1>
+        <p class="deck">Regression-adjusted analysis of a longitudinal labor panel reveals a persistent gender wage
+          penalty,
+          a compounding effect from salary history disclosure, and an inconclusive early signal from California's 2018
+          ban —
+          raising questions about whether structural remedies can outpace entrenched compensation anchors.</p>
+        <p class="byline-row">By <strong>LMU Datathon Team</strong> &nbsp;·&nbsp; Panel Dataset Analysis &nbsp;·&nbsp;
+          Western U.S. Labor Market</p>
+      </section>
+
+      <div class="hero-rule">
+        <hr>
+      </div>
+
+      <!-- STAT STRIP -->
+      <div class="stat-strip">
+        <div class="stat-item">
+          <span class="stat-num">10%</span>
+          <span class="stat-label">Gender wage penalty holding all other factors equal</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">88%</span>
+          <span class="stat-label">Wage premium in the highest-gap industry (Mining)</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">0.55</span>
+          <span class="stat-label">Prior pay coefficient post CA ban — up from 0.50</span>
+        </div>
+      </div>
+
+      <!-- ARTICLE BODY -->
+      <article class="article-body">
+
+        <p>This analysis draws on a longitudinal panel dataset provided by LMU, in which individuals are observed across
+          multiple time periods alongside their occupation, hours worked, demographic characteristics, and recorded
+          wages.
+          The panel structure is analytically significant: it enables within-person comparisons over time, reducing the
+          risk
+          that cross-sectional confounders — differences in industry selection, educational attainment, or regional
+          labor
+          markets — are driving observed wage differentials. Three research questions guided the inquiry: whether a
+          measurable gender wage gap exists after covariate adjustment, whether employer salary disclosure requirements
+          amplify that gap, and whether California's 2018 prohibition on prior salary inquiries has altered the
+          prior-pay-to-current-pay transmission mechanism.</p>
+
+        <p>Across all three questions, the data points in a consistent and concerning direction — but also reveals the
+          limits of what the current evidence window can establish.</p>
+
+        <div class="section-head">
+          <span class="section-num">Finding 01</span>
+          <h2 class="section-title">A regression-adjusted 10% gender penalty survives full covariate control</h2>
+        </div>
+
+        <p>The most direct test of gender-based wage discrimination is a multivariate regression that isolates the
+          female
+          wage coefficient after controlling for all observable productivity-related factors. When education, work
+          experience, weekly hours, occupation group, and industry are held constant, the model yields a female wage
+          coefficient of approximately −0.10 — meaning female employees earn roughly 10% less than male employees in
+          otherwise identical positions. This estimate is not a raw descriptive gap, which can be inflated by
+          occupational
+          sorting; it is the residual penalty that persists within the same job categories and skill levels.</p>
+
+        <p>Descriptively, the median hourly wage for women in the dataset was <strong>$9.30</strong> versus
+          <strong>$10.00</strong> for men. The distribution, however, is more revealing than the medians alone. The
+          right-skew in male wages — where the upper tail extends considerably further — indicates that the gap is not
+          uniform. It narrows near the lower end of the distribution and widens substantially at higher wage levels,
+          consistent with a "glass ceiling" dynamic in which high-earning roles disproportionately reward male
+          incumbents
+          beyond what observable qualifications would predict.
+        </p>
+
+        <!-- CHART 1: Box plot approximation as bar chart -->
+        <div class="chart-block">
+          <div class="chart-title">Hourly Wage Distribution by Gender</div>
+          <div class="chart-subtitle">Median, interquartile range, and upper whisker · Hourly wages ($)</div>
+          <div class="legend">
+            <span><span class="legend-swatch" style="background:#7B9CC2;"></span> Female</span>
+            <span><span class="legend-swatch" style="background:#C0392B;"></span> Male</span>
+          </div>
+          <div style="position:relative; width:100%; height:280px;">
+            <canvas id="chart1" role="img"
+              aria-label="Box plot comparison of hourly wages by gender. Female median $9.30, Male median $10.00.">Female
+              median wage $9.30; Male median wage $10.00.</canvas>
+          </div>
+          <p class="chart-caption">Source: LMU Datathon panel dataset. Wages normalized and outliers removed prior to
+            analysis. The box plot displays the 25th–75th percentile range, median line, and whiskers to the 10th/90th
+            percentile.</p>
+        </div>
+
+        <div class="pull-quote">
+          <blockquote>"The −10% female wage coefficient is a within-group estimate — it measures the gap among workers
+            in
+            the same occupation, at the same experience level. Its persistence is precisely what makes it analytically
+            significant."</blockquote>
+          <cite>LMU Labor Market Analysis · Regression Model Results</cite>
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="section-head">
+          <span class="section-num">Finding 02</span>
+          <h2 class="section-title">Salary history disclosure operates as a gap-amplification mechanism</h2>
+        </div>
+
+        <p>The 10% adjusted penalty identified in Finding 01 assumes a labor market where wage offers are set
+          independently
+          of prior earnings. That assumption does not hold uniformly. To test whether salary history disclosure
+          exacerbates
+          the gender gap, occupation group was used as a proxy variable: white-collar roles were classified as sectors
+          that
+          routinely request prior pay; blue-collar roles were classified as those that generally do not. While this
+          operationalization is an approximation — not all white-collar employers ask, nor all blue-collar ones stay
+          silent
+          — it provides a tractable first-order test of the disclosure mechanism.</p>
+
+        <p>The results are directionally clear. In the no-disclosure group, the absolute wage gap is
+          <strong>$1.50/hr</strong> (female: $9.30; male: $10.80). In the disclosure group, the gap nearly doubles in
+          absolute terms to <strong>$3.40/hr</strong> (female: $14.50; male: $17.90). It is important to note that the
+          higher absolute levels in the disclosure group partly reflect the higher-earning nature of white-collar work;
+          the
+          relevant signal is the widened differential, not the absolute wages. This differential widening is consistent
+          with
+          the anchoring hypothesis: if historical female wages already encode prior discrimination, then using them as a
+          bargaining anchor in a new negotiation imports that discrimination forward, compounding it across job
+          transitions
+          rather than correcting it.
+        </p>
+
+        <!-- CHART 2: Grouped bar - avg wage by prior pay policy & sex -->
+        <div class="chart-block">
+          <div class="chart-title">Average Wage by Prior Pay Policy & Gender</div>
+          <div class="chart-subtitle">Grouped by whether employer requests salary history ($)</div>
+          <div class="legend">
+            <span><span class="legend-swatch" style="background:#7B9CC2;"></span> Female</span>
+            <span><span class="legend-swatch" style="background:#C0392B;"></span> Male</span>
+          </div>
+          <div style="position:relative; width:100%; height:260px;">
+            <canvas id="chart2" role="img"
+              aria-label="Grouped bar chart showing average wages. When salary not asked: Female $9.30, Male $10.80. When salary asked: Female $14.50, Male $17.90.">When
+              salary not asked: Female $9.30, Male $10.80. When salary asked: Female $14.50, Male $17.90.</canvas>
+          </div>
+          <p class="chart-caption">Occupation category used as a proxy: blue-collar (doesn't ask prior pay) vs.
+            white-collar
+            (asks prior pay). The wage differential is $1.50 in blue-collar roles and $3.40 in white-collar roles.</p>
+        </div>
+
+        <p>A key analytical caution applies here: the occupation-group proxy introduces selection bias. Women who sort
+          into
+          white-collar jobs may differ systematically from those in blue-collar roles in ways the model does not fully
+          capture — differences in negotiation behavior, network access, or informal wage-setting norms. The disclosure
+          mechanism therefore cannot be declared causal from this analysis alone. What the data does establish is a
+          strong
+          conditional association: the gender gap is substantially larger in the segment of the labor market where prior
+          pay
+          information is most likely to influence the negotiation.</p>
+
+        <!-- SECTION 3 -->
+        <div class="section-head">
+          <span class="section-num">Finding 03</span>
+          <h2 class="section-title">Post-ban coefficient provides an inconclusive but theoretically instructive signal
+          </h2>
+        </div>
+
+        <p>California's January 2018 salary history ban created a natural experiment: a discrete policy intervention
+          that,
+          in principle, should reduce the weight employers place on prior pay when setting new wages. The evaluation
+          approach here is a rolling annual regression of current wage on prior wage within the Western U.S. region,
+          which
+          allows the prior-pay coefficient to be tracked year-by-year as an indicator of how strongly historical
+          earnings
+          transmit into new compensation offers.</p>
+
+        <p>Contrary to the policy's intended effect, the coefficient did not decline post-ban. The pre-2018 mean
+          coefficient
+          was approximately 0.4975; the post-2018 estimate rose to 0.5542. Before interpreting this as evidence of
+          policy
+          failure, however, several confounds must be considered. First, the post-ban observation window covers only 3–4
+          years of data, which is insufficient to distinguish a structural shift from year-to-year noise given the
+          pre-ban
+          coefficient's own volatility (ranging from 0.07 to 0.54 across the pre-period). Second, the coefficient will
+          never
+          approach zero even under a fully effective ban, because prior pay legitimately proxies for skills and
+          accumulated
+          human capital that are independently wage-relevant. The meaningful evaluation question is not whether the
+          coefficient equals zero, but whether it declined relative to a counterfactual non-ban trajectory — a test that
+          requires more post-period data than is currently available.</p>
+
+        <!-- CHART 3: Line chart - prior pay coefficient over time -->
+        <div class="chart-block">
+          <div class="chart-title">Prior Pay Coefficient Over Time (West)</div>
+          <div class="chart-subtitle">Regression coefficient: relationship between prior wages and current wages by year
+          </div>
+          <div class="legend">
+            <span><span class="legend-swatch" style="background:#3B5BA5; border-radius:50%;"></span> Pre-2018
+              trend</span>
+            <span><span class="legend-swatch" style="background:#C0392B; border-radius:50%;"></span> Post-2018</span>
+          </div>
+          <div style="position:relative; width:100%; height:280px;">
+            <canvas id="chart3" role="img"
+              aria-label="Line chart of prior pay coefficient 1998 to 2021. Pre-ban coefficient averages around 0.35 to 0.50. Post-2018 coefficient rises to 0.55.">Pre-ban
+              coefficient ranges from 0.07 to 0.54. Post-2018 coefficient rises to approximately 0.55.</canvas>
+          </div>
+          <p class="chart-caption">CA salary history ban enacted January 2018 (dashed vertical line). Only 3–4 years of
+            post-ban data available at time of analysis, limiting the ability to draw firm conclusions.</p>
+        </div>
+
+        <p>What the post-ban period does reveal, beyond the uptick in the point estimate, is a marked reduction in
+          coefficient volatility. Pre-2018, the annual coefficient ranged widely from 0.07 to 0.54 — a spread that
+          reflects
+          genuine year-to-year instability in how strongly prior pay transmitted into wages, potentially driven by
+          business
+          cycle variation, shifting labor market tightness, or inconsistent employer practices. Post-2018, the
+          coefficient
+          clusters tightly in the 0.50–0.55 range. This convergence suggests that while the ban has not weakened the
+          prior
+          pay relationship, it may have stabilized it — possibly by removing the most opportunistic uses of salary
+          history
+          (the years with very low coefficients) while leaving the structurally embedded transmission intact. In other
+          words, the floor of the relationship has risen even as the ceiling has not fallen. The lingering effect is not
+          just persistent; it is now more reliably so.</p>
+
+        <p>One interpretation is that compliance and enforcement are lagging the legislation. Employers who previously
+          used
+          salary history openly may now be capturing the same information through informal channels — referrals,
+          background
+          checks, or inferred ranges from job title history — rendering the formal prohibition partially porous and
+          producing a more uniform, if still inequitable, baseline. Distinguishing between these explanations would
+          require
+          a longer post-ban data series and ideally a difference-in-differences design comparing California against a
+          matched non-ban state, which would allow the policy's counterfactual trajectory to be estimated rather than
+          assumed.</p>
+
+        <!-- SECTION 4 -->
+        <div class="section-head">
+          <span class="section-num">Finding 04</span>
+          <h2 class="section-title">Industry-level wage premiums reveal where structural factors most amplify inequality
+          </h2>
+        </div>
+
+        <p>The aggregate 10% gender penalty masks substantial heterogeneity across the economy. To decompose this, the
+          log-wage model was extended with industry fixed effects, yielding regression coefficients that represent each
+          sector's wage premium above a common reference baseline, controlling for the individual-level factors already
+          described. These premiums capture industry-level wage-setting norms, skill scarcity, unionization rates, and
+          physical risk compensation — all independent of who the worker is.</p>
+
+        <p>The practical implication for gender equity is this: the larger a sector's wage premium, the more the
+          absolute
+          dollar value of any proportional gender gap within that sector. A 10% penalty on a $10/hr wage is $1.00. The
+          same
+          proportional penalty on a $17.90/hr white-collar wage — inflated partly by industry premiums — is $1.79. The
+          penalty rate may be constant; its economic magnitude is not. This multiplicative dynamic means that female
+          workers
+          who manage to enter high-premium industries like Finance and Insurance (51% premium) still face a larger
+          absolute
+          earnings loss from the gender penalty than women in lower-premium sectors. Sector entry is a necessary but
+          insufficient condition for closing the gap.</p>
+
+        <!-- CHART 4: Horizontal bar - industry wage premiums -->
+        <div class="chart-block">
+          <div class="chart-title">Industry Wage Premiums Above Baseline</div>
+          <div class="chart-subtitle">Percentage wage premium relative to a reference sector · Regression-adjusted
+            estimates
+          </div>
+          <div style="position:relative; width:100%; height:380px;">
+            <canvas id="chart4" role="img"
+              aria-label="Horizontal bar chart of industry wage premiums. Mining 88%, Construction 56%, Utilities 55%, Finance 51%, Transportation 50%, Professional Services 49%, Manufacturing 42%, Public Administration 39%, Wholesale Trade 39%.">Mining
+              88%, Construction 56%, Utilities 55%, Finance and Insurance 51%, Transportation and Warehousing 50%,
+              Professional Scientific and Technical Services 49%, Manufacturing 42%, Public Administration 39%,
+              Wholesale
+              Trade 39%.</canvas>
+          </div>
+          <p class="chart-caption">Wage premiums are regression coefficients from a log-wage model controlling for
+            education, experience, and hours worked. These represent industry-level wage premiums beyond individual
+            characteristics.</p>
+        </div>
+
+        <p>Mining's 88% premium is the most extreme in the dataset and reflects a confluence of hazard pay, remote
+          location
+          premiums, and a workforce that is over 80% male nationally — meaning the sector premium and the gender
+          composition
+          problem are correlated rather than independent. Construction (56%) and Utilities (55%) share similar
+          characteristics. The more analytically interesting case may be Finance and Insurance (51%), where the premium
+          reflects cognitive skill scarcity and organizational compensation norms rather than physical risk. This sector
+          is
+          also heavily implicated in the salary-history disclosure finding, creating a situation where two amplifying
+          mechanisms — industry premium and prior pay anchoring — operate simultaneously on the same population of
+          workers.
+        </p>
+
+        <!-- FINDINGS SUMMARY BOX -->
+        <div class="findings-box">
+          <h3>Analytical Summary</h3>
+          <ul>
+            <li><strong>Adjusted gender penalty of ~10%</strong> survives full covariate control across education,
+              experience, hours, occupation, and industry — ruling out compositional explanations</li>
+            <li><strong>Salary history proxy analysis</strong> shows the absolute gender gap nearly doubles ($1.50 →
+              $3.40/hr) in disclosure-associated sectors, consistent with prior-pay anchoring theory; causal
+              identification
+              limited by occupational selection bias</li>
+            <li><strong>Post-ban prior pay coefficient</strong> (0.55) exceeds pre-ban mean (0.50), but the short
+              observation window and pre-period volatility preclude any confident conclusion about policy efficacy — a
+              difference-in-differences design with a control state would strengthen inference</li>
+            <li><strong>Industry premiums (39–88%)</strong> amplify the absolute dollar cost of the gender penalty
+              multiplicatively; high-premium sectors like Finance & Insurance concentrate both the disclosure mechanism
+              and
+              the industry premium simultaneously</li>
+            <li><strong>Data limitation:</strong> unmeasured variables including negotiation behavior, informal network
+              access, and firm-level compensation policies remain potential confounders that the panel model cannot
+              fully
+              absorb</li>
+          </ul>
+        </div>
+
+        <p>Taken together, these findings suggest that wage inequality in this dataset is not attributable to a single
+          mechanism but to a set of reinforcing structural processes: a baseline penalty that survives individual-level
+          controls; a hiring practice that compounds historical inequity at each job transition; high-premium industries
+          that multiply the absolute cost of any proportional gap; and a legislative intervention whose effectiveness
+          cannot
+          yet be established. The policy implication is that single-point interventions — a salary ban alone, for
+          instance —
+          are unlikely to be sufficient if the other mechanisms remain intact. Addressing the gap structurally would
+          require
+          coordinated action across hiring practices, industry-level compensation norms, and enforcement infrastructure,
+          alongside longer data collection to measure what is and is not working.</p>
+
+      </article>
+
+      <p style="text-align: center; margin: 20px 0;"><a href="posts/lmu-datathon-2026.qmd">code</a></p>
+
+      <footer>
+        <strong>LMU Datathon · Grad #12</strong> &nbsp;·&nbsp; Labor Market Analysis &nbsp;·&nbsp; Panel Dataset,
+        Western
+        U.S. &nbsp;·&nbsp; Research purposes only
+      </footer>
+
+    </main>
+  </div> <!-- /content -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <script>
+    // ── CHART 1: Box-plot approximation (floating bar) ──
+    new Chart(document.getElementById('chart1'), {
+      type: 'bar',
+      data: {
+        labels: ['Female', 'Male'],
+        datasets: [
+          {
+            label: 'Interquartile Range',
+            data: [[5, 15], [7, 20]],
+            backgroundColor: ['rgba(123,156,194,0.5)', 'rgba(192,57,43,0.45)'],
+            borderColor: ['#7B9CC2', '#C0392B'],
+            borderWidth: 1.5,
+            barPercentage: 0.35,
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => {
+                const v = ctx.raw;
+                return ` IQR: $${v[0]}–$${v[1]}`;
+              }
+            }
+          },
+          annotation: {
+            annotations: {
+              medianF: {
+                type: 'line', scaleID: 'y', value: 9.3,
+                borderColor: '#7B9CC2', borderWidth: 2.5,
+                label: { content: 'Median $9.30', display: true, position: 'start', font: { size: 11, family: 'DM Sans, sans-serif' }, color: '#3B6D94', backgroundColor: 'transparent' }
+              },
+              medianM: {
+                type: 'line', scaleID: 'y', value: 10,
+                borderColor: '#C0392B', borderWidth: 2.5,
+                label: { content: 'Median $10.00', display: true, position: 'end', font: { size: 11, family: 'DM Sans, sans-serif' }, color: '#A32D2D', backgroundColor: 'transparent' }
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            min: 0, max: 75,
+            title: { display: true, text: 'Hourly Wage ($)', font: { size: 11, family: 'DM Sans, sans-serif' }, color: '#888' },
+            ticks: { font: { size: 11 }, color: '#888', callback: (v) => '$' + v },
+            grid: { color: 'rgba(0,0,0,0.06)' }
+          },
+          x: {
+            grid: { display: false },
+            ticks: { font: { size: 13, family: 'DM Sans, sans-serif' }, color: '#333' }
+          }
+        }
+      }
+    });
+
+    // ── CHART 2: Grouped bar - prior pay policy ──
+    new Chart(document.getElementById('chart2'), {
+      type: 'bar',
+      data: {
+        labels: ["Doesn't Ask Prior Pay", 'Asks Prior Pay'],
+        datasets: [
+          {
+            label: 'Female',
+            data: [9.3, 14.5],
+            backgroundColor: 'rgba(123,156,194,0.75)',
+            borderColor: '#7B9CC2',
+            borderWidth: 1,
+          },
+          {
+            label: 'Male',
+            data: [10.8, 17.9],
+            backgroundColor: 'rgba(192,57,43,0.75)',
+            borderColor: '#C0392B',
+            borderWidth: 1,
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: (ctx) => ` ${ctx.dataset.label}: $${ctx.raw.toFixed(2)}`
+            }
+          }
+        },
+        scales: {
+          y: {
+            min: 0,
+            title: { display: true, text: 'Avg Wage ($)', font: { size: 11, family: 'DM Sans, sans-serif' }, color: '#888' },
+            ticks: { font: { size: 11 }, color: '#888', callback: (v) => '$' + v },
+            grid: { color: 'rgba(0,0,0,0.06)' }
+          },
+          x: {
+            grid: { display: false },
+            ticks: { font: { size: 12, family: 'DM Sans, sans-serif' }, color: '#333' }
+          }
+        }
+      }
+    });
+
+    // ── CHART 3: Prior pay coefficient over time ──
+    const years = [1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021];
+    const prePre = [0.07, 0.22, 0.41, 0.19, 0.27, 0.32, 0.41, 0.39, 0.3, 0.41, 0.46, 0.28, 0.54, 0.45, 0.37, 0.41, 0.37, 0.34, 0.39, 0.5, null, null, null, null];
+    const postPost = [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 0.5, 0.52, 0.53, 0.55];
+
+    new Chart(document.getElementById('chart3'), {
+      type: 'line',
+      data: {
+        labels: years,
+        datasets: [
+          {
+            label: 'Pre-2018',
+            data: prePre,
+            borderColor: '#3B5BA5',
+            backgroundColor: 'rgba(59,91,165,0.08)',
+            fill: true,
+            tension: 0.3,
+            pointRadius: 4,
+            pointBackgroundColor: '#3B5BA5',
+            borderWidth: 2,
+            spanGaps: false
+          },
+          {
+            label: 'Post-2018',
+            data: postPost,
+            borderColor: '#C0392B',
+            backgroundColor: 'rgba(192,57,43,0.08)',
+            fill: true,
+            tension: 0.3,
+            pointRadius: 4,
+            pointBackgroundColor: '#C0392B',
+            borderWidth: 2,
+            borderDash: [4, 3],
+            spanGaps: false
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          annotation: {
+            annotations: {
+              banLine: {
+                type: 'line',
+                scaleID: 'x',
+                value: '2018',
+                borderColor: '#333',
+                borderWidth: 1.5,
+                borderDash: [5, 4],
+                label: {
+                  content: 'CA Ban (2018)',
+                  display: true,
+                  position: 'start',
+                  font: { size: 10, family: 'DM Sans, sans-serif' },
+                  color: '#333',
+                  backgroundColor: 'rgba(250,242,237,0.9)'
+                }
+              },
+              zeroLine: {
+                type: 'line',
+                scaleID: 'y',
+                value: 0,
+                borderColor: 'rgba(0,0,0,0.2)',
+                borderWidth: 1,
+                borderDash: [3, 3],
+                label: { content: 'Zero Effect', display: true, position: 'end', font: { size: 10 }, color: '#999', backgroundColor: 'transparent' }
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            min: 0, max: 0.65,
+            title: { display: true, text: 'Coefficient', font: { size: 11, family: 'DM Sans, sans-serif' }, color: '#888' },
+            ticks: { font: { size: 11 }, color: '#888' },
+            grid: { color: 'rgba(0,0,0,0.06)' }
+          },
+          x: {
+            grid: { display: false },
+            ticks: { font: { size: 11 }, color: '#888', maxTicksLimit: 8, autoSkip: true }
+          }
+        }
+      }
+    });
+
+    // ── CHART 4: Horizontal bar - industry premiums ──
+    const industries = [
+      'Mining', 'Construction', 'Utilities', 'Finance & Insurance',
+      'Transportation & Warehousing', 'Prof., Scientific & Technical',
+      'Manufacturing', 'Public Administration', 'Wholesale Trade'
+    ];
+    const premiums = [88, 56, 55, 51, 50, 49, 42, 39, 39];
+    const colors = premiums.map(v =>
+      v >= 80 ? 'rgba(192,57,43,0.85)' :
+        v >= 50 ? 'rgba(192,57,43,0.65)' :
+          'rgba(192,57,43,0.45)'
+    );
+
+    new Chart(document.getElementById('chart4'), {
+      type: 'bar',
+      data: {
+        labels: industries,
+        datasets: [{
+          label: 'Wage Premium (%)',
+          data: premiums,
+          backgroundColor: colors,
+          borderColor: '#C0392B',
+          borderWidth: 0,
+          borderRadius: 2,
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: { label: (ctx) => ` +${ctx.raw}% wage premium` }
+          }
+        },
+        scales: {
+          x: {
+            min: 0, max: 100,
+            title: { display: true, text: 'Wage Premium (%)', font: { size: 11, family: 'DM Sans, sans-serif' }, color: '#888' },
+            ticks: { font: { size: 11 }, color: '#888', callback: (v) => v + '%' },
+            grid: { color: 'rgba(0,0,0,0.06)' }
+          },
+          y: {
+            grid: { display: false },
+            ticks: { font: { size: 12, family: 'DM Sans, sans-serif' }, color: '#333' }
+          }
+        }
+      }
+    });
+
+    // Load annotation plugin
+  </script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/3.0.1/chartjs-plugin-annotation.min.js"></script>
+
+</body>
+
+</html>

@@ -6,5 +6,5 @@ This is my portfolio site. Feel free to look and see my projects.
 
 ## Projects
 
-- [LMU Datathon 2026](posts/lmu-datathon-2026.qmd)
+- [LMU Datathon 2026](labor_market_article (2).html)
 
