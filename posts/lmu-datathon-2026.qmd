@@ -1,0 +1,5 @@
+---
+title: "LMU Datathon 2026"
+---
+
+{{< embed ../LMU_Project.ipynb >}}

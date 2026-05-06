@@ -1,15 +1,15 @@
 ---
 title: "About Me"
-image: profile.jpg
+image: profilepic.png
 about:
   template: jolla
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://www.linkedin.com/in/leo-yu-0369042ba/
     - icon: github
       text: GitHub
-      href: https://github.com
+      href: https://github.com/men0456
 ---
 
 Replace this text with a short bio about yourself. What are you studying? What are you interested in? What do you want to work on?
