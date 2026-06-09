@@ -12,4 +12,4 @@ about:
       href: https://github.com/men0456
 ---
 
-Replace this text with a short bio about yourself. What are you studying? What are you interested in? What do you want to work on?
+Aspiring data scientist with a strong foundation in machine learning, deep learning, and natural language processing. Passionate about leveraging data to drive insights and solve complex problems. Experienced in Python programming, data analysis, and model development. Eager to contribute to innovative projects and collaborate with like-minded professionals in the field of data science.

@@ -4,7 +4,7 @@ A personal portfolio showcasing data science projects and analyses, built with Q
 
 ## 🌐 Live Site
 
-Visit my portfolio at: **[https://men0456.github.io](https://men0456.github.io)**
+Visit my portfolio at: **[https://leoyu.github.io](https://leoyu.github.io)**
 
 ## 📊 Current Projects
 
@@ -13,6 +13,6 @@ Visit my portfolio at: **[https://men0456.github.io](https://men0456.github.io)*
 ## Quick Start
 
 ### For Visitors
-Simply visit [https://men0456.github.io](https://men0456.github.io) to explore the portfolio.
+Simply visit [https://leoyu.github.io](https://leoyu.github.io) to explore the portfolio.
 
 
